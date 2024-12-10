@@ -51,6 +51,10 @@ Developed by Ezhilarasi N Register No: 24901074
 
 ![Screenshot (40)](https://github.com/user-attachments/assets/b661822a-9e65-4e59-84fd-65dfce01cc4c)
 
+
+
+
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
 ![Screenshot (41)](https://github.com/user-attachments/assets/77e65873-9723-4e80-998a-efb8f0b08f46)
