@@ -8,7 +8,6 @@ To implement  T flipflop using verilog and validating their functionality using 
 
 Quartus prime
 
-**THEORY**
 
 **T Flip-Flop**
 
@@ -26,17 +25,37 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
  
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
-**Procedure**
-
-/* write all the steps invloved */
 
 **PROGRAM**
+```
+module t_ff_ (t, clk, rst, q);
+  input t, clk, rst;
+  output reg q;
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+  always @(posedge clk or posedge rst) 
+begin
+    if (rst)
+      q <= 0; // Reset the flip-flop
+    else if (t==0)
+      q <= q; 
+     else
+        q<=~q;
+  end
+endmodule
+```
+
+Developed by Ezhilarasi N Register No: 24901074
+
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![Screenshot (40)](https://github.com/user-attachments/assets/b661822a-9e65-4e59-84fd-65dfce01cc4c)
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![Screenshot (41)](https://github.com/user-attachments/assets/77e65873-9723-4e80-998a-efb8f0b08f46)
+
+
 **RESULTS**
+
+T flipflop using verilog and validating their functionality using their functional tables is verified.
